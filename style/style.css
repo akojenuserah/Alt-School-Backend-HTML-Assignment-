@@ -1,0 +1,78 @@
+*{
+  box-sizing: border-box;
+  padding: 0 25px;
+  margin: 0;
+}
+
+/* Headings */
+
+.heading {
+  font-family: 'Times New Roman';
+  font-weight: 700;
+  font-style: semi-bold;
+  padding-top: 10px;
+}
+
+.paragraph {
+  font-family: 'Times New Roman';
+  font-weight: 400;
+  font-style: normal;
+  line-height: 2;
+}
+
+/* Image */
+
+.img{
+  width:500px;
+  height:auto;
+   display: block;
+  border-radius: 50px;
+  display: block;
+  margin: 20px auto; 
+  }
+
+
+  /* video */
+
+  video {
+    height: 300px; /* Set your desired height here */
+    width: 600px;   /* This ensures the video doesn't look stretched */
+    display: block;
+    margin: 0 auto;
+}
+
+/* Lists */
+li{
+  margin-bottom: 10px;
+}
+
+ul{
+  margin-bottom: 10px;
+}
+
+/* Box Part */
+.details{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+
+.box{
+    border: 1px solid #ccc;
+    padding: 15px;
+    width: 150px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.box h3{
+    margin: 0;
+    font-size: 15px;
+}
+
+.box p{
+    margin-top: 10px;
+    color: #555;
+}
