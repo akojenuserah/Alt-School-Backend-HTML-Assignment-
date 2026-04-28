@@ -5,6 +5,20 @@
 }
 
 /* Headings */
+.company-name{
+  display: flex;
+  justify-content: left;
+  gap: 20px;
+  position : absolute;
+}
+
+.contact-details{
+  display: flex;
+  justify-content: right;
+  gap: 20px;
+  position : relative;
+  margin-bottom: 10px;
+}
 
 .heading {
   font-family: 'Times New Roman';
