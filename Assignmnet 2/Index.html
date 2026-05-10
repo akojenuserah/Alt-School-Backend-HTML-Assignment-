@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Registration Form</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+
+  <div class="wrapper">
+    <div class="header">
+      <p class="eyebrow">Create Account</p>
+        <h1>Welcome to <span>Register</span></h1>
+        <p>Fill in the form below. All fields are required.</p>
+    </div>
+
+    <div class="card">
+          <!-- Success banner (shown on valid submit) -->
+      <div class="success-banner" id="successBanner">
+          <span>✓</span>
+            <span>Registration successful! Welcome aboard.</span>
+          </div>
+
+          <form id="regForm" novalidate>
+
+            <!-- Full Name -->
+            <div class="field">
+              <label for="fullName">Full Name</label>
+              <div class="input-wrap">
+                <input
+                  type="text"
+                  id="fullName"
+                  placeholder="e.g. John Doe"
+                                  />
+              </div>
+            </div>
+
+            <!-- Email -->
+            <div class="field">
+              <label for="email">Email Address</label>
+              <div class="input-wrap">
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="johndoe@domain.com"
+                  
+                />
+              </div>
+            </div>
+
+            <!-- Password -->
+            <div class="field">
+              <label for="password">Password</label>
+              <div class="input-wrap">
+                <input
+                  type="password"
+                  id="password"
+                  class="pw-field"
+                  placeholder="Create a strong password"
+                  autocomplete="new-password"
+                />
+                <button type="button" class="toggle-pw" onclick="togglePw('password', this)" >
+                  Show
+                </button>
+              </div>
+              <div class="strength-bar">
+                <span id="sb1"></span><span id="sb2"></span
+                ><span id="sb3"></span><span id="sb4"></span>
+              </div>
+              <p class="strength-label" id="strengthLabel">Enter a password</p>
+            </div>
+
+            <!-- Confirm Password -->
+            <div class="field">
+              <label for="confirmPassword">Confirm Password</label>
+              <div class="input-wrap">
+                <input
+                  type="password"
+                  id="confirmPassword"
+                  class="pw-field"
+                  placeholder="Re-enter your password"
+                  autocomplete="new-password"
+                />
+                <button
+                  type="button"
+                  class="toggle-pw"
+                  onclick="togglePw('confirmPassword', this)"
+                >
+                  Show
+                </button>
+              </div>
+            </div>
+
+            <!-- Age -->
+            <div class="field">
+              <label for="age">Age</label>
+              <div class="input-wrap">
+                <input
+                  type="number"
+                  id="age"
+                  placeholder="Must be 18 or older"
+                  min="0"
+                  max="120"
+                />
+              </div>
+            </div>
+
+            <button type="submit" class="btn">Create Account →</button>
+          </form>
+        </div>
+
+        <p class="footer-note">
+          Already have an account? <a href="#">Sign in</a>
+        </p>
+      </div>
+    </form>
+  </body>
+</html>
